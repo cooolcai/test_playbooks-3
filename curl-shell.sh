@@ -1,0 +1,3 @@
+curl -ku admin:password -H "Content-Type: application/json" -X POST  http://10.20.3.44/api/v2/inventories/ -d '{"name": "Example Inventory3","organization": 1,"variables": "api_awx_url: \"http://10.20.3.44\"\napi_awx_username: admin\napi_awx_password: password"}' | python3 -m json.tool
+
+curl -ku admin:password -H "Content-Type: application/json" -X POST  http://10.20.3.44/api/v2/inventories/ -d '{"name": "Example Inventory3","organization": 1,"variables": "api_awx_url: \"http://10.20.3.44\"\napi_awx_username: admin\napi_awx_password: password"}' | python3 -m json.tool
