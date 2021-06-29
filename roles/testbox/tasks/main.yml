@@ -1,4 +1,5 @@
 - name: echo
   shell: "echo 'Currently user is logining output' >>/root/output44.log"
+  
 - name: Print server name and user to remote testbox
   shell: "echo 'Currently {{ user }} is logining {{ server_name }}' > {{ output }}"
