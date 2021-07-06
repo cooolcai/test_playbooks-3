@@ -1,4 +1,4 @@
-- name: echo user server_name output
+- name: echo user server_name echo_output
   shell: "echo 'Currently {{ user }} is logining {{ server_name }}' >> {{ echo_output }}"
 
 - name: date-2
