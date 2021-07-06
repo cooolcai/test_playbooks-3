@@ -8,4 +8,5 @@
   shell: "echo ' ' >> {{ output }}"  
 
 - name: datahub-rcp
-  shell: "datahub ingest -c /opt/datahub/docker/ingestion/recipe.yml"  
+  shell: "cd /opt/datahub/docker/ingestion/ && datahub ingest -c recipe.yml"  
+
