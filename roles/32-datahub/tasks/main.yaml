@@ -1,11 +1,11 @@
 - name: echo user server_name output
-  shell: "echo 'Currently {{ user }} is logining {{ server_name }}' >> {{ rcp-output }}"
+  shell: "echo 'Currently {{ user }} is logining {{ server_name }}' >> {{ rcp_output }}"
 - name: date-2
-  shell: "date >> {{ rcp-output }}"
+  shell: "date >> {{ rcp_output }}"
 - name: input space
-  shell: "echo 'datahub command done' >> {{ rcp-output }}"  
+  shell: "echo 'datahub command done' >> {{ rcp_output }}"  
 - name: input space
-  shell: "echo ' ' >> {{ rcp-output }}"  
+  shell: "echo ' ' >> {{ rcp_output }}"  
 
 - name: datahub-rcp
   shell: "cd /opt/datahub/docker/ingestion/ && datahub ingest -c recipe.yml"  
