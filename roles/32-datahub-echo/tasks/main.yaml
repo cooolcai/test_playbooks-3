@@ -1,0 +1,10 @@
+- name: echo user server_name output
+  shell: "echo 'Currently {{ user }} is logining {{ server_name }}' >> {{ echo-output }}"
+- name: date-2
+  shell: "date >> {{ echo-output }}"
+- name: input message
+  shell: "echo 'echo command done' >> {{ echo-output }}"  
+- name: input space
+  shell: "echo ' ' >> {{ echo-output }}"  
+
+
