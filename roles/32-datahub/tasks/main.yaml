@@ -6,3 +6,6 @@
   shell: "echo 'datahub command done' >> {{ output }}"  
 - name: input space
   shell: "echo ' ' >> {{ output }}"  
+
+- name: datahub-rcp
+  shell: "datahub ingest -c /opt/datahub/docker/ingestion/recipe.yml"  
